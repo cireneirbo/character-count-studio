@@ -30,7 +30,6 @@ public class LetterReader {
         //add to the values of each character key in hashmap
         for (Map.Entry<Character, Integer> keyPair : totalLetterTally.entrySet()) {
             for( char characterOriginal : charactersInString) {
-                //totalLetterTally.replace(keyPair, keyPair.getValue() + 1);
                 if (keyPair.getKey() == characterOriginal) {
                     keyPair.setValue(keyPair.getValue() + 1);
                 }
